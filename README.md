@@ -29,7 +29,8 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 - Faucets:
   - TBA
 - Open RPC Endpoints:
-  - TBA
+  - https://nunki.htznr.fault.dev/rpc
+  - wss://nunki.htznr.fault.dev/ws
 
 ### Resources
 
