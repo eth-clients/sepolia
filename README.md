@@ -1,6 +1,8 @@
 # Sepolia Testnet
 The newly launched `--sepolia` cross-client proof-of-work testnet configuration. _(Unofficial documentation.)_
 
+* https://sepolia.dev/
+
 ### Meta data: Sepolia
 
 - Name: **Sepolia**
