@@ -29,7 +29,7 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 - Block Explorer: 
   - https://sepolia.otterscan.io/
 - Faucets:
-  - TBA
+  - https://faucet.sepolia.dev/
 - Open RPC Endpoints:
   - https://nunki.htznr.fault.dev/rpc
   - wss://nunki.htznr.fault.dev/ws
