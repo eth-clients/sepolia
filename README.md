@@ -13,6 +13,7 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
   - Genesis hash: `0x25a5cc106eea7138acab33231d7160d69cb777ee0c2c553fcddf5138993e6dd9`
   - Network ID: `11155111`
   - Chain ID: `11155111`
+- EVM Version: `London`
   - Homestead: `0`
   - Byzantium: `0`
   - Constantinople: `0`
