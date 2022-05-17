@@ -26,8 +26,9 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
   - `enode://ec66ddcf1a974950bd4c782789a7e04f8aa7110a72569b6e65fcd51e937e74eed303b1ea734e4d19cfaec9fbff9b6ee65bf31dcb50ba79acce9dd63a6aca61c7@52.14.151.177:30303`
 - Status Dashboard: 
   - TBA
-- Block Explorer: 
-  - https://sepolia.otterscan.io/
+- Block Explorers: 
+  - https://sepolia.otterscan.io
+  - https://sepolia.etherscan.io
 - Faucets:
   - https://faucet.sepolia.dev/
 - Open RPC Endpoints:
