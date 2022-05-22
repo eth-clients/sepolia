@@ -31,6 +31,7 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
   - https://sepolia.otterscan.io
   - https://sepolia.etherscan.io
 - Faucets:
+  - [https://sepoliafaucet.net](https://sepoliafaucet.net/)
   - https://faucet.sepolia.dev/
 - Open RPC Endpoints:
   - https://nunki.htznr.fault.dev/rpc
