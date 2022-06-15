@@ -35,6 +35,8 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
   - https://faucet.sepolia.dev/
 - Open RPC Endpoints:
   - https://rpc.sepolia.dev
+  - https://rpc.sepolia.online
+  - https://www.sepoliarpc.space
 
 ### Resources
 
