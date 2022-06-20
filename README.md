@@ -33,6 +33,7 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 - Faucets:
   - [https://sepoliafaucet.net](https://sepoliafaucet.net/)
   - https://faucet.sepolia.dev/
+  - https://sepolia-faucet.pk910.de/ (PoW powered)
 - Open RPC Endpoints:
   - https://rpc.sepolia.dev
   - https://rpc.sepolia.online
