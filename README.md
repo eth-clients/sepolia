@@ -38,6 +38,7 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
   - https://rpc.sepolia.online
   - https://www.sepoliarpc.space
   - https://rpc.sepolia.org (status: https://status.sepolia.org)
+  - https://rpc-sepolia.rockx.com
 
 ### Resources
 
