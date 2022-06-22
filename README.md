@@ -6,6 +6,7 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 ### Meta data: Sepolia
 
 - Name: **Sepolia**
+- Currency Symbol: **SEP**
 - Flag: `--sepolia`
 - Stage: _launched_
   - PoW Engine: `ethash`
