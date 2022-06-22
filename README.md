@@ -1,4 +1,4 @@
-# Sepolia Testnet
+# Sepolia Testnet PoS chain
 The newly launched `--sepolia` cross-client proof-of-work testnet configuration. _(Unofficial documentation.)_
 
 * https://sepolia.dev/
