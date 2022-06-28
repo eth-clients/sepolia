@@ -1,9 +1,11 @@
 # Sepolia Testnet
-The newly launched `--sepolia` cross-client proof-of-work testnet configuration. _(Unofficial documentation.)_
+The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 
 * https://sepolia.dev/
 
-### Meta data: Sepolia
+:warning: Sepolia testnet will be merged with the recently launched "_Bepolia_" permissioned beacon chain. This will mark the end of the permissionless proof-of-work phase and only approved parties  will be able to run a validator for Bepolia.
+
+## Meta data: Sepolia
 
 - Name: **Sepolia**
 - Flag: `--sepolia`
@@ -25,13 +27,13 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 - Bootnodes:
   - `enode://9246d00bc8fd1742e5ad2428b80fc4dc45d786283e05ef6edbd9002cbc335d40998444732fbe921cb88e1d2c73d1b1de53bae6a2237996e9bfe14f871baf7066@18.168.182.86:30303`
   - `enode://ec66ddcf1a974950bd4c782789a7e04f8aa7110a72569b6e65fcd51e937e74eed303b1ea734e4d19cfaec9fbff9b6ee65bf31dcb50ba79acce9dd63a6aca61c7@52.14.151.177:30303`
-- Status Dashboard: 
+- Status Dashboard:
   - TBA
-- Block Explorers: 
+- Block Explorers:
   - https://sepolia.otterscan.io
   - https://sepolia.etherscan.io
 - Faucets:
-  - [https://sepoliafaucet.net](https://sepoliafaucet.net/)
+  - https://sepoliafaucet.net
   - https://faucet.sepolia.dev/
   - https://sepolia-faucet.pk910.de/ (PoW powered)
   - https://faucet-sepolia.rockx.com/
@@ -48,7 +50,39 @@ The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
 - [hyperledger/besu#2933: Add Sepolia configs and address baseFee at genesis case](https://github.com/hyperledger/besu/pull/2933)
 - [ethereum/pm#460: Post-Merge testnets](https://github.com/ethereum/pm/issues/460)
 
+## Meta-data: Bepolia
 
-### Contribute
+Bepolia Testnet is the beacon-chain to be merged with the Sepolia testnet.
+
+- Merge TTD: `17000000000000000`
+- GENESIS_FORK_VERSION: `0x90000069`
+
+Altair will fork at epoch `50` and merge epoch at `100`.
+
+- Genesis Time: `1655733600` (Jun-20-2022 02:00:00 PM +UTC)
+- Genesis Fork Version: `0x90000069`
+- Fork Digest: `0xa8fee8ee` (`0xd3010778` pre-genesis fork digest)
+- Initial State Root: `0xfb9afe32150fa39f4b346be2519a67e2a4f5efcd50a1dc192c3f6b3d013d2798`
+- Genesis Block Root:
+	- Without state root update: `0xeade62f0457b2fdf48e7d3fc4b60736688286be7c7a3ac4c9a16a5e0600bd9e4`
+	- With state root update: `0xfb9b64fe445f76696407e1e3cc390371edff147bf712db86db6197d4b31ede43`
+- Genesis Validators Root: `0xd8ea171f3c94aea21ebc42a1ed61052acf3f9209c00e4efbaaddac09ed9b8078`
+- Genesis Validators Count: `1570`
+- Eth1 Data:
+  - Deposit Root: `0xd70a234731285c6804c2a4f56711ddb8c82c99740f207854891028af34e27e5e`
+  - Deposit Count: `0`
+  - Block Hash: `0x491ebac1b7f9c0eb426047a495dc577140cb3e09036cd3f7266eda86b635d9fa`
+
+ENR for consensus clients:
+
+```yaml
+# EF bootnode
+  - "enr:-Iq4QMCTfIMXnow27baRUb35Q8iiFHSIDBJh6hQM5Axohhf4b6Kr_cOCu0htQ5WvVqKvFgY28893DHAg8gnBAXsAVqmGAX53x8JggmlkgnY0gmlwhLKAlv6Jc2VjcDI1NmsxoQK6S-Cii_KmfFdUJL2TANL3ksaKUnNXvTCv1tLwXs0QgIN1ZHCCIyk"
+  - "enr:-KG4QE5OIg5ThTjkzrlVF32WT_-XT14WeJtIz2zoTqLLjQhYAmJlnk4ItSoH41_2x0RX0wTFIe5GgjRzU2u7Q1fN4vADhGV0aDKQqP7o7pAAAHAyAAAAAAAAAIJpZIJ2NIJpcISlFsStiXNlY3AyNTZrMaEC-Rrd_bBZwhKpXzFCrStKp1q_HmGOewxY3KwM8ofAj_ODdGNwgiMog3VkcIIjKA"
+# Teku bootnode
+    - "enr:-KG4QMJSJ7DHk6v2p-W8zQ3Xv7FfssZ_1E3p2eY6kN13staMObUonAurqyWhODoeY6edXtV8e9eL9RnhgZ9va2SMDRQMhGV0aDKQS-iVMYAAAHD0AQAAAAAAAIJpZIJ2NIJpcIQDhAAhiXNlY3AyNTZrMaEDXBVUZhhmdy1MYor1eGdRJ4vHYghFKDgjyHgt6sJ-IlCDdGNwgiMog3VkcIIjKA"
+ ```
+
+## Contribute
 
 Run a node, contribute services, and [report issues](https://github.com/goerli/sepolia/issues).
