@@ -83,6 +83,26 @@ ENR for consensus clients:
     - "enr:-KG4QMJSJ7DHk6v2p-W8zQ3Xv7FfssZ_1E3p2eY6kN13staMObUonAurqyWhODoeY6edXtV8e9eL9RnhgZ9va2SMDRQMhGV0aDKQS-iVMYAAAHD0AQAAAAAAAIJpZIJ2NIJpcIQDhAAhiXNlY3AyNTZrMaEDXBVUZhhmdy1MYor1eGdRJ4vHYghFKDgjyHgt6sJ-IlCDdGNwgiMog3VkcIIjKA"
  ```
 
+Key <> client team mapping:
+```
+EF: 0-100
+Nethermind: 100-199
+Besu: 200-299
+Erigon: 300-399
+Lighthouse: 400-499
+Teku: 500-599
+Nimbus: 600-699
+Lodestar: 700-799
+Prysm: 800-899
+Attestant/Vouch: 900-999
+q9f: 1000-1099
+Lightclient: 1100-1199
+Kiln.fi: 1200-1299
+Ralexstokes: 1300-1399
+Simply staking: 1400-1499
+EF Security: 1500-1549
+Blox staking: 1573-1672
+```
 ## Contribute
 
 Run a node, contribute services, and [report issues](https://github.com/goerli/sepolia/issues).
