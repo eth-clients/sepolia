@@ -60,4 +60,6 @@ Ralexstokes: 1300-1399
 Simply staking: 1400-1499
 EF Security: 1500-1549
 Blox staking: 1573-1672
+lost keys that will inactivity leak: 1673-1772
+obol: 1780-1879
 ```
