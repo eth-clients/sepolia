@@ -1,9 +1,9 @@
 # Sepolia Testnet
-The newly launched `--sepolia` cross-client proof-of-work testnet configuration.
+The `--sepolia` cross-client proof-of-authority testnet configuration.
 
 * https://sepolia.dev/
 
-:warning: Sepolia testnet will be merged with the recently launched "_Bepolia_" permissioned beacon chain. This will mark the end of the permissionless proof-of-work phase and only approved parties  will be able to run a validator for Bepolia.
+:warning: Sepolia testnet has been merged with the recently launched "_Bepolia_" permissioned beacon chain. This will mark the end of the permissionless proof-of-work phase and only approved parties  will be able to run a validator for Bepolia.
 
 ## Meta data: Sepolia
 
