@@ -1,3 +1,6 @@
+<p align="center"><a href="https://github.com/eth-clients/goerli">Goerli (2019)</a> | <strong>Sepolia (2021)</strong> | <a href="https://github.com/eth-clients/holesovice">Holesovice (2023)</a></p>
+<p align="center"><img src="./assets/sepolia.png" /></p>
+
 # Sepolia Testnet
 The `--sepolia` cross-client proof-of-authority testnet configuration.
 
@@ -82,7 +85,7 @@ ENR for consensus clients:
 # Teku bootnode
     - "enr:-KG4QMJSJ7DHk6v2p-W8zQ3Xv7FfssZ_1E3p2eY6kN13staMObUonAurqyWhODoeY6edXtV8e9eL9RnhgZ9va2SMDRQMhGV0aDKQS-iVMYAAAHD0AQAAAAAAAIJpZIJ2NIJpcIQDhAAhiXNlY3AyNTZrMaEDXBVUZhhmdy1MYor1eGdRJ4vHYghFKDgjyHgt6sJ-IlCDdGNwgiMog3VkcIIjKA"
  ```
- 
+
 ## Contribute
 
 Run a node, contribute services, and [report issues](https://github.com/goerli/sepolia/issues).
