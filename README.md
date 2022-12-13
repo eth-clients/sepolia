@@ -46,6 +46,7 @@ The `--sepolia` cross-client proof-of-authority testnet configuration.
   - https://www.sepoliarpc.space
   - https://rpc.sepolia.org (status: https://status.sepolia.org)
   - https://rpc-sepolia.rockx.com
+  - https://rpc.bordel.wtf/sepolia
 
 ### Resources
 
