@@ -4,6 +4,7 @@
 # Sepolia Testnet
 The `--sepolia` cross-client proof-of-authority testnet configuration.
 
+* https://sepolia.ethpandaops.io/
 * https://sepolia.dev/
 
 :warning: Sepolia testnet has been merged with the recently launched "_Bepolia_" permissioned beacon chain. This will mark the end of the permissionless proof-of-work phase and only approved parties  will be able to run a validator for Bepolia.
