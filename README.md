@@ -61,11 +61,11 @@ Bepolia Testnet is the beacon-chain to be merged with the Sepolia testnet.
 
 - Merge TTD: `17000000000000000`
 - GENESIS_FORK_VERSION: `0x90000069`
-
-Altair will fork at epoch `50` and merge epoch at `100`.
-
 - Genesis Time: `1655733600` (Jun-20-2022 02:00:00 PM +UTC)
 - Genesis Fork Version: `0x90000069`
+- Altair fork epoch: `50`
+- Bellatrix fork epoch: `100`
+- Capella fork epoch: `56832`
 - Fork Digest: `0xa8fee8ee` (`0xd3010778` pre-genesis fork digest)
 - Initial State Root: `0xfb9afe32150fa39f4b346be2519a67e2a4f5efcd50a1dc192c3f6b3d013d2798`
 - Genesis Block Root:
