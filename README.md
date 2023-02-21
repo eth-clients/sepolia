@@ -39,6 +39,7 @@ The `--sepolia` cross-client proof-of-authority testnet configuration.
 - Faucets:
   - https://sepoliafaucet.net
   - https://faucet.sepolia.dev/
+  - https://grabteeth.xyz
   - https://sepolia-faucet.pk910.de/ (PoW powered)
   - https://faucet-sepolia.rockx.com/
 - Open RPC Endpoints:
