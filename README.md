@@ -41,6 +41,7 @@ The `--sepolia` cross-client proof-of-authority testnet configuration.
   - https://faucet.sepolia.dev/
   - https://sepolia-faucet.pk910.de/ (PoW powered)
   - https://faucet-sepolia.rockx.com/
+  - https://faucet.quicknode.com/ethereum/sepolia
 - Open RPC Endpoints:
   - https://rpc.sepolia.dev
   - https://rpc.sepolia.online
