@@ -2,10 +2,9 @@
 <p align="center"><img src="./assets/sepolia.png" /></p>
 
 # Sepolia Testnet
-The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia is the perfect place to test decentralized applications, smart contracts, and other EVM functionality.
+The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia replaced the sunset Rinkeby and Kovan networks and is the perfect place to test decentralized applications, smart contracts, and other EVM functionality.
 
 * https://sepolia.ethpandaops.io/
-* https://sepolia.dev/
 
 ## Meta data: Sepolia
 
@@ -38,7 +37,6 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia i
 - Faucets:
   - https://sepoliafaucet.net
   - https://coinbase.com/faucets/ethereum-sepolia-faucet
-  - https://faucet.sepolia.dev/
   - https://grabteeth.xyz
   - https://sepolia-faucet.pk910.de/ (PoW powered)
   - https://faucet-sepolia.rockx.com/
