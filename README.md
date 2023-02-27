@@ -2,12 +2,10 @@
 <p align="center"><img src="./assets/sepolia.png" /></p>
 
 # Sepolia Testnet
-The `--sepolia` cross-client proof-of-authority testnet configuration.
+The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia is the perfect place to test decentralized applications, smart contracts, and other EVM functionality.
 
 * https://sepolia.ethpandaops.io/
 * https://sepolia.dev/
-
-:warning: Sepolia testnet has been merged with the recently launched "_Bepolia_" permissioned beacon chain. This will mark the end of the permissionless proof-of-work phase and only approved parties  will be able to run a validator for Bepolia.
 
 ## Meta data: Sepolia
 
@@ -20,14 +18,15 @@ The `--sepolia` cross-client proof-of-authority testnet configuration.
   - Network ID: `11155111`
   - Chain ID: `11155111`
 - EVM Version: `London`
-  - Homestead: `0`
-  - Byzantium: `0`
-  - Constantinople: `0`
-  - Petersfork: `0`
-  - Istanbul: `0`
-  - Berlin: `0`
-  - MuirGlacier: `0`
-  - London: `0`
+  - Homestead: `0` (block number)
+  - Byzantium: `0` (block number)
+  - Constantinople: `0` (block number)
+  - Petersfork: `0` (block number)
+  - Istanbul: `0` (block number)
+  - Berlin: `0` (block number)
+  - MuirGlacier: `0` (block number)
+  - London: `0` (block number)
+  - Shanghai: `1677557088` (unix time)
 - Bootnodes:
   - `enode://9246d00bc8fd1742e5ad2428b80fc4dc45d786283e05ef6edbd9002cbc335d40998444732fbe921cb88e1d2c73d1b1de53bae6a2237996e9bfe14f871baf7066@18.168.182.86:30303`
   - `enode://ec66ddcf1a974950bd4c782789a7e04f8aa7110a72569b6e65fcd51e937e74eed303b1ea734e4d19cfaec9fbff9b6ee65bf31dcb50ba79acce9dd63a6aca61c7@52.14.151.177:30303`
