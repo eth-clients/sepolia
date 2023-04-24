@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/eth-clients/goerli">Goerli (2019)</a> | <strong>Sepolia (2021)</strong> | <a href="https://github.com/eth-clients/holesovice">Holli (2023)</a></p>
+<p align="center"><a href="https://github.com/eth-clients/goerli">Goerli (2019)</a> | <strong>Sepolia (2021)</strong> | <a href="https://github.com/eth-clients/holesky">Holešky (2023)</a></p>
 <p align="center"><img src="./assets/sepolia.png" /></p>
 
 # Sepolia Testnet
