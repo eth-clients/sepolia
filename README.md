@@ -43,7 +43,6 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - https://faucet.quicknode.com/ethereum/sepolia
   - https://sepoliafaucet.com/ (Alchemy's free faucet)
 - Open RPC Endpoints:
-  - https://rpc.sepolia.dev
   - https://rpc.sepolia.online
   - https://www.sepoliarpc.space
   - https://rpc.sepolia.org (status: https://status.sepolia.org)
