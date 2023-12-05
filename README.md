@@ -35,7 +35,6 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - https://sepolia.otterscan.io
   - https://sepolia.etherscan.io
 - Faucets:
-  - https://sepoliafaucet.net
   - https://coinbase.com/faucets/ethereum-sepolia-faucet
   - https://grabteeth.xyz
   - https://sepolia-faucet.pk910.de/ (PoW powered)
