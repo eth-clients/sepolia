@@ -36,13 +36,14 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - https://sepolia.otterscan.io
   - https://sepolia.etherscan.io
 - Faucets:
-  - https://coinbase.com/faucets/ethereum-sepolia-faucet
   - https://grabteeth.xyz
   - https://sepolia-faucet.pk910.de/ (PoW powered)
   - https://faucet-sepolia.rockx.com/
   - https://faucet.quicknode.com/ethereum/sepolia
   - https://sepoliafaucet.com/ (Alchemy's free faucet)
   - https://learnweb3.io/faucets/sepolia (LearnWeb3's free faucet)
+  - https://infura.io/faucet
+  - https://unitap.app/gastap
 - Open RPC Endpoints:
   - https://rpc.sepolia.online
   - https://www.sepoliarpc.space
