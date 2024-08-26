@@ -6,21 +6,20 @@ on:
   workflow_dispatch:
 
 jobs:
-
   check_cl_bootnodes:
     name: Check CL Bootnodes
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
     - name: "Check CL Bootnodes"
       id: check
       shell: bash
       run: |
-
         GREEN='\033[0;32m'
         RED='\033[0;31m'
         NC='\033[0m'
+
+        docker pull ethereum/client-go:alltools-latest > /dev/null
 
         label=""
         label_idx=0
@@ -47,7 +46,7 @@ jobs:
               echo -n "$(printf '%-40s' "    retry $retries...") "
             fi
 
-            check_res=$(docker run --rm --entrypoint /usr/local/bin/devp2p ethereum/client-go:alltools-latest discv5 ping $bootnode 2>/dev/null)
+            check_res=$(docker run --rm --entrypoint /usr/local/bin/devp2p ethereum/client-go:alltools-latest discv5 ping $bootnode 2>/dev/null || true)
             if [ "$check_res" = "<nil>" ]; then
               echo -ne " ${GREEN}OK${NC}"
               break
@@ -61,6 +60,7 @@ jobs:
                 failures=$((failures+1))
               fi
             fi
+          done
 
           echo ""
         done <<< "$(cat ./metadata/bootstrap_nodes.yaml)"
@@ -78,10 +78,11 @@ jobs:
       id: check
       shell: bash
       run: |
-      
         GREEN='\033[0;32m'
         RED='\033[0;31m'
         NC='\033[0m'
+
+        docker pull ethereum/client-go:alltools-latest > /dev/null
 
         label=""
         label_idx=0
@@ -109,7 +110,7 @@ jobs:
               echo -n "$(printf '%-40s' "    retry $retries...") "
             fi
 
-            check_res=$(docker run --rm --entrypoint /usr/local/bin/devp2p ethereum/client-go:alltools-latest rlpx ping $bootnode 2>&1)
+            check_res=$(docker run --rm --entrypoint /usr/local/bin/devp2p ethereum/client-go:alltools-latest rlpx ping $bootnode 2>&1 || true)
             if [ "$check_res" = "EOF" ]; then
               echo -ne " ${GREEN}OK${NC}"
               break
