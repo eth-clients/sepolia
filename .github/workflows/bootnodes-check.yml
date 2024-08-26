@@ -1,0 +1,135 @@
+name: Check Bootnodes
+
+on:
+  schedule:
+  - cron: '0 10 * * *'
+  workflow_dispatch:
+
+jobs:
+
+  check_cl_bootnodes:
+    name: Check CL Bootnodes
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: "Check CL Bootnodes"
+      id: check
+      shell: bash
+      run: |
+
+        GREEN='\033[0;32m'
+        RED='\033[0;31m'
+        NC='\033[0m'
+
+        label=""
+        label_idx=0
+        failures=0
+        while read line; do
+          if [ -z "$line" ]; then
+            continue
+          fi
+          if [[ $line = \#* ]] ; then
+            label=$(echo "${line:1}" | xargs)
+            label_idx=0
+            continue
+          fi
+
+          label_idx=$((label_idx+1))
+          echo -n "$(printf '%-40s' "checking CL bootnode '$label #$label_idx'...") "
+
+          bootnode=$(echo $line | cut -d' ' -f2)
+
+          retries=0
+          while [ $retries -lt 5 ]; do
+            if [ $retries -gt 0 ]; then
+              echo ""
+              echo -n "$(printf '%-40s' "    retry $retries...") "
+            fi
+
+            check_res=$(docker run --rm --entrypoint /usr/local/bin/devp2p ethereum/client-go:alltools-latest discv5 ping $bootnode 2>/dev/null)
+            if [ "$check_res" = "<nil>" ]; then
+              echo -ne " ${GREEN}OK${NC}"
+              break
+            else
+              echo -ne " ${RED}FAIL${NC}"
+              echo -ne "\t $check_res"
+              retries=$((retries+1))
+              if [ $retries -lt 5 ]; then
+                sleep 2
+              else
+                failures=$((failures+1))
+              fi
+            fi
+
+          echo ""
+        done <<< "$(cat ./metadata/bootstrap_nodes.yaml)"
+
+        if [ $failures -gt 0 ]; then
+          exit 1
+        fi
+
+  check_el_bootnodes:
+    name: Check EL Bootnodes
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: "Check EL Bootnodes"
+      id: check
+      shell: bash
+      run: |
+      
+        GREEN='\033[0;32m'
+        RED='\033[0;31m'
+        NC='\033[0m'
+
+        label=""
+        label_idx=0
+        failures=0
+        while read line; do
+          if [ -z "$line" ]; then
+            continue
+          fi
+          if [[ $line = \#* ]] ; then
+            label=$(echo "${line:1}" | xargs)
+            label_idx=0
+            continue
+          fi
+
+          # Check if the bootnode is reachable
+          label_idx=$((label_idx+1))
+          echo -n "$(printf '%-40s' "checking EL bootnode '$label #$label_idx'...") "
+
+          bootnode=$(echo $line | cut -d' ' -f2)
+
+          retries=0
+          while [ $retries -lt 5 ]; do
+            if [ $retries -gt 0 ]; then
+              echo ""
+              echo -n "$(printf '%-40s' "    retry $retries...") "
+            fi
+
+            check_res=$(docker run --rm --entrypoint /usr/local/bin/devp2p ethereum/client-go:alltools-latest rlpx ping $bootnode 2>&1)
+            if [ "$check_res" = "EOF" ]; then
+              echo -ne " ${GREEN}OK${NC}"
+              break
+            else
+              echo -ne " ${RED}FAIL${NC}"
+              echo -ne "\t $check_res"
+              retries=$((retries+1))
+              if [ $retries -lt 5 ]; then
+                sleep 2
+              else
+                failures=$((failures+1))
+              fi
+            fi
+          done
+
+          echo ""
+
+          continue
+        done <<< "$(cat ./metadata/enodes.yaml)"
+
+        if [ $failures -gt 0 ]; then
+          exit 1
+        fi
