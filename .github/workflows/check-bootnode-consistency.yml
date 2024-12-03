@@ -1,0 +1,61 @@
+
+name: Check bootnode consistency
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  check_consistency:
+    name: Run bootnode consistency checks
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check bootnode consistency
+      run: |
+        cl_bootnodes=$(cat metadata/bootstrap_nodes.yaml | yq ".[]")
+        el_bootnodes=$(cat metadata/enodes.yaml | yq ".[]")
+
+        echo "cl bootnodes ($(echo "$cl_bootnodes" | wc -l)):"
+        echo "$cl_bootnodes"
+        echo ""
+
+        echo "el bootnodes ($(echo "$el_bootnodes" | wc -l)):"
+        echo "$el_bootnodes"
+        echo ""
+
+        # check duplicate cl bootnodes
+        cl_duplicates=$(echo "$cl_bootnodes" | sort | uniq -d)
+        if [ ! -z "$cl_duplicates" ]; then
+            echo "duplicate cl bootnodes:"
+            echo "$cl_duplicates"
+            exit 1
+        fi
+
+        # check duplicate el bootnodes
+        el_duplicates=$(echo "$el_bootnodes" | sort | uniq -d)
+        if [ ! -z "$el_duplicates" ]; then
+            echo "duplicate el bootnodes:"
+            echo "$el_duplicates"
+            exit 1
+        fi
+
+        # check if bootnodes in besu.json match the bootnodes in metadata/enodes.yaml
+        besu_bootnodes=$(cat metadata/besu.json | jq -r ".config.discovery.bootnodes[]")
+        besu_bootnodes_diff=$(diff <(echo "$el_bootnodes") <(echo "$besu_bootnodes"))
+        if [ ! -z "$besu_bootnodes_diff" ]; then
+            echo "bootnodes in metadata/besu.json do not match the bootnodes in metadata/enodes.yaml"
+            echo "$besu_bootnodes_diff"
+            exit 1
+        fi
+
+        # check if bootnodes in chainspec.json match the bootnodes in metadata/enodes.yaml
+        chainspec_bootnodes=$(cat metadata/chainspec.json | jq -r ".nodes[]")
+        chainspec_bootnodes_diff=$(diff <(echo "$el_bootnodes") <(echo "$chainspec_bootnodes"))
+        if [ ! -z "$chainspec_bootnodes_diff" ]; then
+            echo "bootnodes in metadata/chainspec.json do not match the bootnodes in metadata/enodes.yaml"
+            echo "$chainspec_bootnodes_diff"
+            exit 1
+        fi
