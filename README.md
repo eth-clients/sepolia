@@ -25,8 +25,12 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - Berlin: `0` (block number)
   - MuirGlacier: `0` (block number)
   - London: `0` (block number)
-  - Shanghai: `1677557088` (unix time)
-  - Cancun: `1706655072` (unix time)
+  - Shanghai: `1677557088` (unix time) - Tuesday, 28 February 2023 04:04:48
+  - Cancun: `1706655072` (unix time) - Tuesday, 30 January 2024 22:51:12
+  - Prague: `1741159776` (unix time) - Wednesday, 5 March 2025 07:29:36
+  - Osaka: `1760427360` (unix time) - Tuesday, 14 October 2025 07:36:00
+  - BPO 1: `1761017184` (unix time) - Tuesday, 21 October 2025 03:26:24
+  - BPO 2: `1761607008` (unix time) - Monday, 27 October 2025 23:16:48
 - Bootnodes:
   - `enode://9246d00bc8fd1742e5ad2428b80fc4dc45d786283e05ef6edbd9002cbc335d40998444732fbe921cb88e1d2c73d1b1de53bae6a2237996e9bfe14f871baf7066@18.168.182.86:30303`
   - `enode://ec66ddcf1a974950bd4c782789a7e04f8aa7110a72569b6e65fcd51e937e74eed303b1ea734e4d19cfaec9fbff9b6ee65bf31dcb50ba79acce9dd63a6aca61c7@52.14.151.177:30303`
@@ -69,6 +73,9 @@ Bepolia Testnet is the beacon-chain to be merged with the Sepolia testnet.
 - Altair fork epoch: `50`
 - Bellatrix fork epoch: `100`
 - Capella fork epoch: `56832`
+- Deneb fork epoch: `132608`
+- Electra fork epoch: `222464`
+- Fulu fork epoch: `272640`
 - Fork Digest: `0xa8fee8ee` (`0xd3010778` pre-genesis fork digest)
 - Initial State Root: `0xfb9afe32150fa39f4b346be2519a67e2a4f5efcd50a1dc192c3f6b3d013d2798`
 - Genesis Block Root:
