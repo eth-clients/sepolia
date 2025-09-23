@@ -25,12 +25,23 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - Berlin: `0` (block number)
   - MuirGlacier: `0` (block number)
   - London: `0` (block number)
-  - Shanghai: `1677557088` (unix time) - Tuesday, 28 February 2023 04:04:48
-  - Cancun: `1706655072` (unix time) - Tuesday, 30 January 2024 22:51:12
-  - Prague: `1741159776` (unix time) - Wednesday, 5 March 2025 07:29:36
-  - Osaka: `1760427360` (unix time) - Tuesday, 14 October 2025 07:36:00
-  - BPO 1: `1761017184` (unix time) - Tuesday, 21 October 2025 03:26:24
-  - BPO 2: `1761607008` (unix time) - Monday, 27 October 2025 23:16:48
+  - Shapella:
+    * Shanghai Time: `1677557088` (unix time) - Tuesday, 28 February 2023 04:04:48
+    * Capella Epoch: `56832`
+  - Dencun:
+    - Cancun Time: `1706655072` (unix time) - Tuesday, 30 January 2024 22:51:12
+    - Deneb Epoch: `132608`
+  - Pectra:
+    - Prague Time: `1741159776` (unix time) - Wednesday, 5 March 2025 07:29:36
+    - Electra Epoch: `222464`
+  - Fusaka:
+    - Osaka Time: `1760427360` (unix time) - Tuesday, 14 October 2025 07:36:00
+    - Fulu Epoch: `272640`
+  - BPO:
+    - BPO 1 Time: `1761017184` (unix time) - Tuesday, 21 October 2025 03:26:24
+    - BPO 1 Epoch: `52480`
+    - BPO 2 Time: `1761607008` (unix time) - Monday, 27 October 2025 23:16:48
+    - BPO 2 Epoch: `54016`
 - Bootnodes:
   - `enode://9246d00bc8fd1742e5ad2428b80fc4dc45d786283e05ef6edbd9002cbc335d40998444732fbe921cb88e1d2c73d1b1de53bae6a2237996e9bfe14f871baf7066@18.168.182.86:30303`
   - `enode://ec66ddcf1a974950bd4c782789a7e04f8aa7110a72569b6e65fcd51e937e74eed303b1ea734e4d19cfaec9fbff9b6ee65bf31dcb50ba79acce9dd63a6aca61c7@52.14.151.177:30303`
