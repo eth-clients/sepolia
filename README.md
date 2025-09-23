@@ -39,9 +39,9 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
     - Fulu Epoch: `272640`
   - BPO:
     - BPO 1 Time: `1761017184` (unix time) - Tuesday, 21 October 2025 03:26:24
-    - BPO 1 Epoch: `52480`
+    - BPO 1 Epoch: `274176`
     - BPO 2 Time: `1761607008` (unix time) - Monday, 27 October 2025 23:16:48
-    - BPO 2 Epoch: `54016`
+    - BPO 2 Epoch: `275712`
 - Bootnodes:
   - `enode://9246d00bc8fd1742e5ad2428b80fc4dc45d786283e05ef6edbd9002cbc335d40998444732fbe921cb88e1d2c73d1b1de53bae6a2237996e9bfe14f871baf7066@18.168.182.86:30303`
   - `enode://ec66ddcf1a974950bd4c782789a7e04f8aa7110a72569b6e65fcd51e937e74eed303b1ea734e4d19cfaec9fbff9b6ee65bf31dcb50ba79acce9dd63a6aca61c7@52.14.151.177:30303`
