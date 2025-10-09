@@ -68,12 +68,6 @@
     "eip6780TransitionTimestamp": "0x65b97d60",
     "blobSchedule": [
       {
-        "timestamp": "0x0",
-        "target": 3,
-        "max": 6,
-        "baseFeeUpdateFraction": "0x32f0ed"
-      },
-      {
         "timestamp": "0x67c7fd60",
         "target": 6,
         "max": 9,
