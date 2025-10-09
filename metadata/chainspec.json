@@ -57,7 +57,7 @@
     "eip3541Transition": "0x0",
     "terminalTotalDifficulty": "0x36568f12e8000",
     "mergeForkIdTransition": "0x1a7acb",
-    "eip4895TransitionTimestamp": "0x63fd7d60",
+    "eip4895TransitionTimestamp": "0x63fd760",
     "eip3855TransitionTimestamp": "0x63fd760",
     "eip3651TransitionTimestamp": "0x63fd760",
     "eip3860TransitionTimestamp": "0x63fd760",
