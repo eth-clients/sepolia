@@ -52,14 +52,15 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - https://sepolia.etherscan.io
   - https://eth-sepolia.blockscout.com/
 - Faucets:
-  - https://grabteeth.xyz
-  - https://sepolia-faucet.pk910.de/ (PoW powered)
-  - https://faucet-sepolia.rockx.com/
-  - https://faucet.quicknode.com/ethereum/sepolia
-  - https://sepoliafaucet.com/ (Alchemy's free faucet)
-  - https://learnweb3.io/faucets/sepolia (LearnWeb3's free faucet)
-  - https://infura.io/faucet
-  - https://unitap.app/gastap
+  - [Alchemy Sepolia Faucet](https://sepoliafaucet.com/)
+  - [Chain Platform Sepolia Faucet](https://faucet.chainplatform.co/faucets/ethereum-sepolia)
+  - [Grabteeth Sepolia Faucet](https://grabteeth.xyz)
+  - [Infura Sepolia Faucet](https://infura.io/faucet)
+  - [LearnWeb3 Sepolia Faucet](https://learnweb3.io/faucets/sepolia)
+  - [PoW Sepolia Faucet (pk910.de)](https://sepolia-faucet.pk910.de/)
+  - [QuickNode Sepolia Faucet](https://faucet.quicknode.com/ethereum/sepolia)
+  - [RockX Sepolia Faucet](https://faucet-sepolia.rockx.com/)
+  - [Unitap Gastap Sepolia Faucet](https://unitap.app/gastap)
 - Open RPC Endpoints:
   - https://rpc.sepolia.online
   - https://www.sepoliarpc.space
