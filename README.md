@@ -60,6 +60,7 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - https://learnweb3.io/faucets/sepolia (LearnWeb3's free faucet)
   - https://infura.io/faucet
   - https://unitap.app/gastap
+  - https://getsepolia.2bd.net
 - Open RPC Endpoints:
   - https://rpc.sepolia.online
   - https://www.sepoliarpc.space
