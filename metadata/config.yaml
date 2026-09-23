@@ -216,3 +216,16 @@ BLOB_SCHEDULE:
     MAX_BLOBS_PER_BLOCK: 15
   - EPOCH: 275712
     MAX_BLOBS_PER_BLOCK: 21
+
+# Gas limit scheduling
+# ---------------------------------------------------------------
+
+GAS_LIMIT_SCHEDULE:
+  - EPOCH: 353024
+    GAS_LIMIT: 100000000
+  - EPOCH: 353099
+    GAS_LIMIT: 130000000
+  - EPOCH: 3530174
+    GAS_LIMIT: 170000000
+  - EPOCH: 353249
+    GAS_LIMIT: 200000000
