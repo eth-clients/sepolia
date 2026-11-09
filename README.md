@@ -71,6 +71,7 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - https://rpc.sepolia.org (status: https://status.sepolia.org)
   - https://rpc-sepolia.rockx.com
   - https://rpc.bordel.wtf/sepolia
+  - https://ethereum-sepolia.rpc.thyme.sh/public (status: https://status.thyme.sh)
 
 ### Resources
 
