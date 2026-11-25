@@ -20,7 +20,7 @@ The `--sepolia` cross-client proof-of-authority testnet configuration. Sepolia r
   - Homestead: `0` (block number)
   - Byzantium: `0` (block number)
   - Constantinople: `0` (block number)
-  - Petersfork: `0` (block number)
+  - Petersburg: `0` (block number)
   - Istanbul: `0` (block number)
   - Berlin: `0` (block number)
   - MuirGlacier: `0` (block number)
